@@ -40,7 +40,8 @@ def scrape_and_save_title(url, output_file='webpage_title.txt'):
         return None
 
 if __name__ == "__main__":
-    target_url = "https://github.com/dashboard"
+
+    target_url = input("Enter the target URL: ")
     output_filename = "title.txt"
     scraped_title = scrape_and_save_title(target_url, output_filename)
 
